@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job/Work Design Recommendation"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textColor="#fff"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Changing working positions frequently so that working in one position is of a reasonable short duration.\n
+•	Pace work appropriately.\n
+
+•	Allow workers suitable rest period to relax; exercises may also help.\n
+
+•	Seat must be design in such a way that it will have back rest for machine operators.\n
+
+•	Provide instructions on proper work practices and the use of rest break.\n
+
+•	Organize your work so that the usual operations are done within easy reach.\n
+
+•	Allow workers an adjustment period when they return to work after an absence from vacation or illness so that they can gradually return to a regular work pace.\n
+"
+          android:textSize="15sp"
+        android:typeface="sans"
+        android:layout_margin="20dp"
+        android:lineSpacingExtra="5sp"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
