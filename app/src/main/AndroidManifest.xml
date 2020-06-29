@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ergocheck">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_ergo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activities.Splash"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Activities.About"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Activities.RecommendationDisplay"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar"
+            android:screenOrientation="portrait"></activity>
+
+
+
+        <activity android:name=".Activities.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Activities.Packing_MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Activities.Diagnosis"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Activities.WorkRecommendation"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Activities.AccidentRecommendation"
+            android:screenOrientation="portrait"/>
+
+
+
+    </application>
+
+</manifest>
