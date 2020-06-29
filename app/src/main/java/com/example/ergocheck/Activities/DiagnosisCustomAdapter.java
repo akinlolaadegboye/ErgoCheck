@@ -16,11 +16,16 @@ import java.util.ArrayList;
 
 
 public class DiagnosisCustomAdapter extends BaseAdapter {
+<<<<<<< HEAD
 
 	Context context;
 	ArrayList<DiagnosisItems> arraylist;
 
 
+=======
+	Context context;
+	ArrayList<DiagnosisItems> arraylist;
+>>>>>>> version2
 	public DiagnosisCustomAdapter(Context context, ArrayList<DiagnosisItems> arraylist) {
 		this.context = context;
 		this.arraylist = arraylist;
@@ -38,7 +43,10 @@ public class DiagnosisCustomAdapter extends BaseAdapter {
 
 	@Override
 	public long getItemId(int pos) {
+<<<<<<< HEAD
 		// item id
+=======
+>>>>>>> version2
 		return pos;
 	}
 
@@ -50,6 +58,7 @@ public class DiagnosisCustomAdapter extends BaseAdapter {
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		if (view == null) {
 			view = inflater.inflate(R.layout.diagnosis_items, parent, false);
+<<<<<<< HEAD
 
 			holder = new ViewHolder();
 
@@ -66,12 +75,24 @@ public class DiagnosisCustomAdapter extends BaseAdapter {
 		byte[] image_ = arraylist.get(position).getImage();
 
 		
+=======
+			holder = new ViewHolder();
+			holder.titleTextView = (TextView) view.findViewById(R.id.title);
+			holder.image = (ImageView) view.findViewById(R.id.image);
+			view.setTag(holder);
+		} else holder = (ViewHolder) view.getTag();
+
+		
+		final String title = arraylist.get(position).getTitle();
+		byte[] image_ = arraylist.get(position).getImage();
+>>>>>>> version2
 		holder.titleTextView.setText(title);
 		holder.image.setImageBitmap(AppUtilityClass.getImage(image_));
 
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+<<<<<<< HEAD
 
             	if(title.equalsIgnoreCase("Body Pains")){
 
@@ -93,6 +114,16 @@ public class DiagnosisCustomAdapter extends BaseAdapter {
             }
         });
 
+=======
+            	if(title.equalsIgnoreCase("Body Pains")){
+				GoToDiagnosisClass();
+				}
+				else{
+				GoToRecommendationDisplayClass(position);
+				}
+            }
+        });
+>>>>>>> version2
 		return view;
 	}
 
@@ -100,9 +131,28 @@ public class DiagnosisCustomAdapter extends BaseAdapter {
 	public class ViewHolder {
 		TextView titleTextView;
 		ImageView image;
+<<<<<<< HEAD
 
 	}
 
 
 
+=======
+	}
+
+	void GoToDiagnosisClass(){
+		Intent intent = new Intent(context, Diagnosis.class);
+		intent.putExtra("number","4");
+		intent.putExtra("from","adapter");
+		intent.putExtra("machineUsed","Sealing machine");
+		context.startActivity(intent);
+	}
+
+	void GoToRecommendationDisplayClass(int position){
+		Intent intent = new Intent(context, RecommendationDisplay.class);
+		intent.putExtra("recommendationString",arraylist.get(position).getRecommendation());
+		intent.putExtra("from","notAdapter");
+		context.startActivity(intent);
+	}
+>>>>>>> version2
 }

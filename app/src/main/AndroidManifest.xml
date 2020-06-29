@@ -33,7 +33,11 @@
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"/>
 
+<<<<<<< HEAD
         <activity android:name=".Activities.MainActivityPacking"
+=======
+        <activity android:name=".Activities.Packing_MainActivity"
+>>>>>>> version2
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"/>
 

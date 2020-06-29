@@ -8,12 +8,16 @@ import com.example.ergocheck.R;
 
 public class AccidentRecommendation extends Activity {
 
+<<<<<<< HEAD
     LinearLayout iconLayout;
 
+=======
+>>>>>>> version2
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.accident_recommendation);
+<<<<<<< HEAD
 
 
 
@@ -21,6 +25,9 @@ public class AccidentRecommendation extends Activity {
 
 
 
+=======
+    }
+>>>>>>> version2
 }
 
 

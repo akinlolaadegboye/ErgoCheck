@@ -13,20 +13,29 @@ import com.example.ergocheck.R;
 
 
 public class Splash extends Activity {
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> version2
     private static int SPLASH_TIME_OUT = 2500;
     LinearLayout iconLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+<<<<<<< HEAD
 
+=======
+>>>>>>> version2
         if (!isTaskRoot()) {
             finish();
             return;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> version2
         setContentView(R.layout.splash);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
@@ -34,6 +43,7 @@ public class Splash extends Activity {
                 && getIntent().hasCategory(Intent.CATEGORY_LAUNCHER)
                 && getIntent().getAction() != null
                 && getIntent().getAction().equals(Intent.ACTION_MAIN)) {
+<<<<<<< HEAD
 
             finish();
             return;
@@ -58,6 +68,15 @@ public class Splash extends Activity {
          iconLayout.setVisibility(View.VISIBLE);
 
     new Handler().postDelayed(new Runnable() {
+=======
+            finish();
+            return;
+        }
+        iconLayout = (LinearLayout) findViewById(R.id.iconLayout);
+        iconLayout.clearAnimation();
+        iconLayout.setVisibility(View.VISIBLE);
+        new Handler().postDelayed(new Runnable() {
+>>>>>>> version2
 
             /*
              * Showing Splash screen with a timer. This will be useful when you
@@ -66,6 +85,7 @@ public class Splash extends Activity {
 
             @Override
             public void run() {
+<<<<<<< HEAD
 
                     Intent i = new Intent(Splash.this, MainActivity.class);
                     startActivity(i);
@@ -79,3 +99,12 @@ public class Splash extends Activity {
 }
 
 
+=======
+                Intent i = new Intent(Splash.this, MainActivity.class);
+                startActivity(i);
+                finish();
+            }
+        }, SPLASH_TIME_OUT);
+    }
+}
+>>>>>>> version2

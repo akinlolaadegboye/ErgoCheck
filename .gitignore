@@ -1,9 +1,22 @@
 *.iml
 .gradle
 /local.properties
+<<<<<<< HEAD
 /.idea/workspace.xml
 /.idea/libraries
+=======
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+>>>>>>> version2
 .DS_Store
 /build
 /captures
 .externalNativeBuild
+<<<<<<< HEAD
+=======
+.cxx
+>>>>>>> version2
